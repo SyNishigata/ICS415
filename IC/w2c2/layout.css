@@ -1,0 +1,39 @@
+header {
+    border-style: solid;
+    border-width: thin;
+    text-align: center;
+    font-family: 'Tangerine', serif;
+    font-size: 150%;
+}
+
+nav {
+    border-style: solid;
+    border-width: thin;
+}
+
+#content {
+    border-style: solid;
+    border-width: thin;
+    display: inline-flex;
+    width: 100%;
+}
+
+aside{
+    border-style: solid;
+    border-width: thin;
+    float:  left;
+    width: 25%;
+    text-align: center;
+}
+
+#home {
+    border-style: solid;
+    border-width: thin;
+    width: 75%;
+}
+
+footer{
+    border-style: solid;
+    border-width: thin;
+}
+
