@@ -1,0 +1,51 @@
+#everything {
+    color: red;
+}
+
+body{
+    background-image: url(http://global.fncstatic.com/static/managed/img/Scitech/milkwaynasa.jpg);
+}
+header {
+    border-style: solid;
+    border-width: thin;
+    border-color: blue;
+    text-align: center;
+    font-size: 150%;
+    height: 25%;
+    display: inline-flex;
+}
+
+nav {
+    border-style: solid;
+    border-width: thin;
+    height: 25px;
+}
+
+#content {
+    border-style: solid;
+    border-width: thin;
+    display: inline-flex;
+    width: 100%;
+}
+
+aside{
+    border-style: solid;
+    border-width: thin;
+    float:  left;
+    width: 25%;
+    text-align: center;
+}
+
+#home {
+    border-style: solid;
+    border-width: thin;
+    width: 75%;
+}
+
+footer{
+    border-style: solid;
+    border-width: thin;
+    height: 50px;
+    text-align: center;
+}
+

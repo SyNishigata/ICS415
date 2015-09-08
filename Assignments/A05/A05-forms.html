@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <link rel="stylesheet" type="text/css" href="A05-layout.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+</head>
+<body>
+
+<div id="everything">
+    <header>
+        <h1>Sy's Cool Website</h1>
+        <h3>Version 3.0</h3>
+        <h5>Even better than ever.</h5>
+    </header>
+
+    <nav>
+        <a href="A05.html">Home</a>
+        <a href="A05-forms.html">Forms</a>
+        <a href="A05-etc.html">Etc.</a>
+    </nav>
+
+    <div id="content">
+        <aside>
+            <h4>Summary Window</h4>
+            This is a cool Forms Page.
+        </aside>
+
+        <div id="home">
+            <h4>Forms Page</h4>
+
+            <section>
+                Here is my range section:
+                <br>
+                On a scale of 1 - 10, how amazing is this website?
+                <br>
+                9<input type="range" name="rating" step="1" min="9" max="10">10
+                <br><br>
+            </section>
+
+            <section>
+                Here is my input section:
+                <br>
+                <form>
+                    Search:
+                    <input type="search">
+                    <br>
+
+                    Enter Date:
+                    <input type="datetime">
+                    <br>
+
+                    Enter Time:
+                    <input type="time">
+                    <br>
+
+                    Enter Month:
+                    <input type="month" name="month">
+                    <br>
+
+                    Enter Number (between 1 and 3):
+                    <input type="number" name="quantity" min="1" max="3">
+                    <br>
+
+                    Enter Email:
+                    <input type="email" name="email">
+                    <br>
+
+                    Enter a url:
+                    <input type="url" name="homepage">
+                    <br>
+
+                    Select a color:
+                    <input type="color" name="color">
+                </form>
+            </section>
+            <br>
+
+            <section>
+                Here is my submit section:
+                <br>
+                <form method="get">
+                    <br>
+                    <input type="submit" name="submit" value="Submit" >
+                </form>
+            </section>
+
+        </div>
+    </div>
+
+    <footer>
+        Copyright: Sy Nishigata
+    </footer>
+</div>
+
+
+
+</body>
+</html>
