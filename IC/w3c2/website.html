@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.5-dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="layout.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <title></title>
+</head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<div class="container-fluid">
+    <div class="row">
+        <header class="col-md-12">
+            <h1>Sy's Cool Website</h1>
+            <h3>Version 3.2</h3>
+        </header>
+    </div>
+</div>
+
+<ul class="nav nav-tabs" role="tablist">
+    <li class="active"><a href="#home" role="tab" data-toggle="tab">Home</a></li>
+    <li><a href="#buttons" role="tab" data-toggle="tab">Buttons</a></li>
+    <li><a href="#forms" role="tab" data-toggle="tab">Forms</a></li>
+    <li><a href="#thumbnails" role="tab" data-toggle="tab">Thumbnails</a></li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane active" id="home">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3", style="border-right: solid">
+                    Summary Window
+                    <br>
+                    This is a cool website.
+                </div>
+
+                <div class="col-md-9">
+                    Home Page
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-pane" id="buttons">
+        <div class="btn-group" data-toggle="buttons">
+            <br>
+            Broken Rock-Paper-Scissors:
+            <br>
+            <label class="btn btn-primary active">
+                <input type="radio" name="options" id="option1" autocomplete="off" checked> Paper
+                <i class="fa fa-hand-paper-o"></i>
+            </label>
+            <label class="btn btn-primary">
+                <input type="radio" name="options" id="option2" autocomplete="off"> Rock
+                <i class="fa fa-hand-rock-o"></i>
+            </label>
+            <label class="btn btn-primary">
+                <input type="radio" name="options" id="option3" autocomplete="off"> Scissors
+                <i class="fa fa-hand-scissors-o"></i>
+            </label>
+        </div>
+    </div>
+
+    <div class="tab-pane" id="forms">
+        <br>
+        Vertical Form:
+        <form role="form">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd2">
+            </div>
+        </form>
+        <br>
+        <br> Horizontal Form:
+        <form class="form-horizontal" role="form">
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="username">Username:</label>
+                <div class="col-sm-10">
+                    <input type="username" class="form-control" id="username" placeholder="Enter Username:">
+                </div>
+            </div>
+            <div class="form-group">
+                <label class="control-label col-sm-2" for="pwd">Password:</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="tab-pane" id="thumbnails">
+    Responsive Image:
+        <br>
+        <img src="http://cdn.playbuzz.com/cdn/b1581f3e-858f-4209-a112-5b919b0b2247/174433d6-0f1e-4f3b-ba7a-1ddb843c38b9.jpg" class="img-responsive" alt="Responsive image">
+        <br>
+        Thumbnail:
+        <br>
+        <img src="http://pbs.twimg.com/media/BDdt1ccCQAAnJxg.jpg:large" alt="..." class="img-thumbnail">
+    </div>
+
+</div>
+
+    <footer style="text-align: center">
+        Copyright: Sy Nishigata
+    </footer>
+
+</body>
+</html>
