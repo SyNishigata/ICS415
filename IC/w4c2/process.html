@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<script>
+    function getUrlVars()
+    {
+        var vars = [], hash;
+        var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+        for(var i = 0; i < hashes.length; i++)
+        {
+            hash = hashes[i].split('=');
+            vars.push(hash[0]);
+            vars[hash[0]] = hash[1];
+        }
+        return vars;
+    }
+
+    var name = getUrlVars()["name"];
+    var address = getUrlVars()["address"];
+    var phone = getUrlVars()["phone"];
+
+    var table = "<table><tr><td>"+name+"</td><td>"+address+"</td><td>"+phone+"</td></tr></table>"
+
+    window.document.write(table);
+</script>
+
+</body>
+</html>
