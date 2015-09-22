@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <title></title>
+
+</head>
+<body>
+<script src="jquery-1.11.3.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<div class="container-fluid" style="height:25% ; border-style:solid">
+    <div class="row">
+        <header class="col-md-12">
+            <h1>Sy's Cool Website</h1>
+            <h3>Version 5.1</h3>
+        </header>
+    </div>
+</div>
+
+<ul class="nav nav-tabs" role="tablist" style="height: 50px">
+    <li class="active"><a href="#home" role="tab" data-toggle="tab">Home</a></li>
+    <li><a href="#onmouseclick" role="tab" data-toggle="tab">onmouseclick</a></li>
+    <li><a href="#onmouseenter" role="tab" data-toggle="tab">onmouseenter/leave</a></li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane active" id="home">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3", style="border-right: solid">
+                    Summary Window
+                    <br>
+                    This is a cool website.
+                </div>
+
+                <div class="col-md-9">
+                    Home Page
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-pane" id="onmouseclick">
+        <div class="btn-group" data-toggle="buttons">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <br>
+                        <p id="fade">PLEASE DON'T CLICK ME. IF YOU CLICK ME, I DIE(fade away).</p>
+                        <p id="death"></p>
+                        <script>
+                            $("#fade").click(function() {
+                                $( this ).fadeOut();
+                                $("#death").text("RIP");
+                                $("#death").attr("style", "color:red");
+                            });
+
+                        </script>
+
+                        <br><br>
+
+                        <p>onclick for a separate div element:</p>
+
+                        <div>
+                            <p id="demo"">Click me.</p>
+                        </div>
+
+                        <div>
+                            <p id="result">I'm going to get changed!!</p>
+                        </div>
+
+                        <script>
+                            $("#demo").click(function() {
+                                $("#result").text("I was changed :(");
+                            });
+
+                        </script>
+
+                        <br>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-pane" id="onmouseenter">
+        <div class="btn-group" data-toggle="buttons">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <br>
+
+                        onmouseenter & onmouseleave:
+                        <br>
+
+                        <p id="mouseenter"> ENTER YOUR MOUSE ON ME ;) </p>
+
+                        <script>
+                            $("#mouseenter").mouseenter(function() {
+                                $( this ).attr("style", "color:red");
+                            });
+                            $("#mouseenter").mouseleave(function() {
+                                $( this ).attr("style", "color:black");
+                            });
+
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer style="text-align: center; height: 50px; border-style: solid">
+        Copyright: Sy Nishigata
+    </footer>
+
+</body>
+</html>
