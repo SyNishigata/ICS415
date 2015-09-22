@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<script src=myScript.js></script>
+<p class="foo bar">HI</p>
+
+<div id="hi" class="yo">
+    <div class="row">
+        <p class="hi elem"></p>
+    </div>
+</div>
+
+
+<script>
+
+    getClasses("div");
+
+    addClass("hi", "sup");
+
+    function getClasses(elem) {
+        var elements = document.getElementsByTagName(elem);
+        var elemList = [];
+
+        for(var i = 0; i<elements.length; i++){
+            elemList.push(elements[i].className);
+        }
+        alert(elemList);
+        return elemList;
+    }
+
+    function addClass(elem, className){
+        var element = document.getElementById(elem);
+        if(element.hasAttribute("class")){
+            element.className = element.className + " " + className;
+        }
+        else{
+            element.className = className;
+        }
+
+    }
+
+
+</script>
+
+</body>
+</html>
