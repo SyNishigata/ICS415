@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <title></title>
+
+</head>
+<body>
+<script src="jquery-1.11.3.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<div class="container-fluid" style="height:25% ; border-style:solid">
+    <div class="row">
+        <header class="col-md-12">
+            <h1>Sy's Cool Website</h1>
+            <h3 id="show">Version 5.2 (CLICK ME TO SHOW)</h3>
+
+            <script>
+
+                $("#show").click(function() {
+                $("#hide").show();
+                $("#hide2").show();
+            });
+
+            </script>
+        </header>
+    </div>
+</div>
+
+<ul id= "hide2" class="nav nav-tabs" role="tablist" style="height: 50px">
+    <li class="active"><a href="#home" role="tab" data-toggle="tab">Home</a></li>
+    <li><a href="#onmouseclick" role="tab" data-toggle="tab">Hide and Show</a></li>
+    <li><a href="#onmouseenter" role="tab" data-toggle="tab">Load and Get</a></li>
+</ul>
+
+<div id="hide" class="tab-content">
+    <div class="tab-pane active" id="home">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3", style="border-right: solid">
+                    Summary Window
+                    <br>
+                    This is a cool website.
+                </div>
+
+                <div class="col-md-9">
+                    Home Page
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-pane" id="onmouseclick">
+        <div class="btn-group" data-toggle="buttons">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <br>
+                        <p id="text">CLICK ME AND EVERYTHING DIES(HIDE).</p>
+                        <script>
+                            $("#text").click(function() {
+                                $("#hide").hide();
+                                $("#hide2").hide();
+                            });
+
+                        </script>
+
+
+                        <br>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-pane" id="onmouseenter">
+        <div class="btn-group" data-toggle="buttons">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <br>
+
+                        <div id="load">
+
+                        </div>
+
+                        <div id="load2">
+
+                        </div>
+                        <button id="button1">Load Kawaii Anime Stuff </button>
+                        <br>
+                        <button id="button2">Load ICS 415 Website Stuff </button>
+                        <br>
+                        <button id="button3">Get ICS 415 Website Stuff </button>
+
+
+                        <script>
+                            $("#button1").click(function(){
+                                $("#load").load("anime");
+                            });
+
+                            $("#button2").click(function(){
+                                $("#load2").load("http://courses.ics.hawaii.edu/ics415f15/morea/040.javascript/ic-w5c2.html");
+                            });
+
+                            $("#button3").click(function(){
+                                $.get("http://courses.ics.hawaii.edu/ics415f15/morea/040.javascript/ic-w5c2.html", function(data, status) {
+                                    alert("Data: " + data + "\nStatus: " + status);
+                                })
+                            })
+                        </script>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer style="text-align: center; height: 50px; border-style: solid">
+        Copyright: Sy Nishigata
+    </footer>
+
+</body>
+</html>
