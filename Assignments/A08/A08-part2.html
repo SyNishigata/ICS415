@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <title></title>
+
+</head>
+<body>
+<script src="jquery-1.11.3.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="myScript.js"></script>
+
+<div class="container-fluid" style="height:25% ; border-style:solid">
+    <div class="row">
+        <header class="col-md-12">
+            <h1>Sy's Cool Website</h1>
+            <h3>Version 8</h3>
+        </header>
+    </div>
+</div>
+
+<ul class="nav nav-tabs" role="tablist" style="height: 50px">
+    <li class="active"><a href="#form" role="tab" data-toggle="tab">Form</a></li>
+</ul>
+
+<div class="tab-pane" id="form">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+
+                <form>
+                    Enter URL:<br>
+                    <input id="url" type="text" name="url">
+                    <br>
+                    <input id="submit" type="submit" value="submit">
+                </form>
+
+                <br><br>
+                <p id="result"></p>
+
+                <script>
+
+                    $("#submit").click(function () {
+                        var url = getUrlVars()["url"];
+                        $("#result").get(url);
+                        //insert link-counter function
+                        alert(url);
+                    });
+                </script>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+    <footer style="text-align: center; height: 50px; border-style: solid">
+        Copyright: Sy Nishigata
+    </footer>
+
+</body>
+</html>

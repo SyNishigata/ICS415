@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="bootstrap-3.3.5-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <title></title>
+
+</head>
+<body>
+<script src="jquery-1.11.3.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="myScript.js"></script>
+
+<div class="container-fluid" style="height:25% ; border-style:solid">
+    <div class="row">
+        <header class="col-md-12">
+            <h1>Sy's Cool Website</h1>
+            <h3>Version 8</h3>
+        </header>
+    </div>
+</div>
+
+<ul class="nav nav-tabs" role="tablist" style="height: 50px">
+    <li class="active"><a href="#home" role="tab" data-toggle="tab">Home</a></li>
+    <li><a href="#faqs" role="tab" data-toggle="tab">FAQS</a></li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane active" id="home">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3", style="border-right: solid">
+                    Summary Window
+                    <br>
+                    This is a cool website.
+                </div>
+
+                <div class="col-md-9">
+                    Home Page
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-pane" id="faqs">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <br>
+                    <div id="faqsContent">
+                        <h4>FAQS</h4>
+
+                        <ol type="1">
+                            <li id="faq1">What is my name?</li>
+                                <p id="answer1"></p>
+
+                            <li id="faq2">Where is my favorite University?</li>
+                            <p id="answer2"></p>
+
+                            <li id="faq3">Who is my favorite Professor?</li>
+                            <p id="answer3"></p>
+
+                            <li id="faq4">Who is my favorite Teacher's Assistant?</li>
+                            <p id="answer4"></p>
+
+                            <li id="faq5">What is my favorite Class?</li>
+                            <p id="answer5"></p>
+
+                        </ol>
+                        <script>
+                            var count1 = 0;
+                            var count2 = 0;
+                            var count3 = 0;
+                            var count4 = 0;
+                            var count5 = 0;
+
+
+                            $("#faq1").click(function () {
+                                if(count1%2 == 0) {
+                                    $("#answer1").text("Sy");
+                                    $("#answer1").show();
+                                    $("#faq1").text("What is my name?" + "(-)");
+                                    count1++;
+                                }
+                                else{
+                                    $("#answer1").hide();
+                                    $("#faq1").text("What is my name?" + "(+)");
+                                    count1++;
+                                }
+                            });
+
+                            $("#faq2").click(function () {
+                                if(count2%2 == 0) {
+                                    $("#answer2").text("University of Hawaii at Manoa");
+                                    $("#answer2").show();
+                                    $("#faq2").text("Where is my favorite University?" + "(-)");
+                                    count2++;
+                                }
+                                else{
+                                    $("#answer2").hide();
+                                    $("#faq2").text("Where is my favorite University?" + "(+)");
+                                    count2++;
+                                }
+                            });
+
+                            $("#faq3").click(function () {
+                                if(count3%2 == 0) {
+                                    $("#answer3").text("Cameron Moore");
+                                    $("#answer3").show();
+                                    $("#faq3").text("Who is my favorite Professor?" + "(-)");
+                                    count3++;
+                                }
+                                else{
+                                    $("#answer3").hide();
+                                    $("#faq3").text("Who is my favorite Professor?" + "(+)");
+                                    count3++;
+                                }
+                            });
+
+                            $("#faq4").click(function () {
+                                if(count4%2 == 0) {
+                                    $("#answer4").text("Jack Lam");
+                                    $("#answer4").show();
+                                    $("#faq4").text("Who is my favorite Teacher's Assistant?" + "(-)");
+                                    count4++;
+                                }
+                                else{
+                                    $("#answer4").hide();
+                                    $("#faq4").text("Who is my favorite Teacher's Assistant?" + "(+)");
+                                    count4++;
+                                }
+                            });
+
+                            $("#faq5").click(function () {
+                                if(count5%2 == 0) {
+                                    $("#answer5").text("ICS 415!");
+                                    $("#answer5").show();
+                                    $("#faq5").text("What is my favorite Class?" + "(-)");
+                                    count5++;
+                                }
+                                else{
+                                    $("#answer5").hide();
+                                    $("#faq5").text("What is my favorite Class?" + "(+)");
+                                    count5++;
+                                }
+                            });
+
+
+                        </script>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer style="text-align: center; height: 50px; border-style: solid">
+        Copyright: Sy Nishigata
+    </footer>
+
+</body>
+</html>
